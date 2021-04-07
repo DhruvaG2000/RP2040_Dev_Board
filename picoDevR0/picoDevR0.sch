@@ -38,7 +38,7 @@ U 1 1 606F7FA3
 P 3150 4650
 F 0 "J2" H 3042 5735 50  0000 C CNN
 F 1 "Conn_01x20_Female" H 3042 5644 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Horizontal" H 3150 4650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 3150 4650 50  0001 C CNN
 F 3 "~" H 3150 4650 50  0001 C CNN
 	1    3150 4650
 	-1   0    0    -1  
@@ -61,7 +61,7 @@ U 1 1 606EDD3B
 P 5700 4650
 F 0 "J1" H 5728 4626 50  0000 L CNN
 F 1 "Conn_01x20_Female" H 5728 4535 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Horizontal" H 5700 4650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x20_P2.54mm_Vertical" H 5700 4650 50  0001 C CNN
 F 3 "~" H 5700 4650 50  0001 C CNN
 	1    5700 4650
 	1    0    0    -1  
