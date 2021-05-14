@@ -11,5 +11,10 @@ Kicad PCB design for a RP2040 Development Board Designed to make the RP2040 more
 ## Pico Pin Diagram
 ![pico](photos/rp2040-pinout.png)
 ## Preview
-![img](photos/picoDevR0_firstPreview.png) 
+### 3D render of current status of the project: 
 
+![img](photos/picoDevR0_may15.png) 
+ 
+### Schematic layout:
+
+![img](photos/picoDevR0_may15_sch.png)
