@@ -67,17 +67,6 @@ $EndComp
 Wire Wire Line
 	5400 5650 6250 5650
 $Comp
-L Connector:Jack-DC J1
-U 1 1 60A0CA80
-P 6150 2300
-F 0 "J1" H 5920 2350 50  0000 R CNN
-F 1 "Jack-DC" H 5920 2259 50  0000 R CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 6200 2260 50  0001 C CNN
-F 3 "~" H 6200 2260 50  0001 C CNN
-	1    6150 2300
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:LM1117-3.3 U1
 U 1 1 60A164B8
 P 4800 2200
@@ -110,11 +99,6 @@ Wire Wire Line
 	4800 2500 4800 3950
 Connection ~ 4800 2500
 Connection ~ 5400 3950
-Wire Wire Line
-	5650 2200 5850 2200
-Connection ~ 5850 2200
-Wire Wire Line
-	5850 2200 6450 2200
 Wire Wire Line
 	4800 2500 5250 2500
 Wire Wire Line
@@ -209,17 +193,6 @@ Wire Wire Line
 	4500 1750 5800 1750
 Connection ~ 4500 2200
 $Comp
-L Switch:SW_MEC_5G SW1
-U 1 1 60A09B24
-P 5450 2200
-F 0 "SW1" H 5450 2485 50  0000 C CNN
-F 1 "SW_MEC_5G" H 5450 2394 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CW_GPTS203211B" H 5450 2400 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 5450 2400 50  0001 C CNN
-	1    5450 2200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED D1
 U 1 1 60A0A221
 P 5450 2300
@@ -272,4 +245,47 @@ Connection ~ 6450 2900
 Connection ~ 6450 3000
 Wire Wire Line
 	6450 3000 6450 2900
+$Comp
+L Connector:Barrel_Jack J1
+U 1 1 60A735D7
+P 6450 2200
+F 0 "J1" H 6220 2250 50  0000 R CNN
+F 1 "Barrel_Jack" H 6220 2159 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 6500 2160 50  0001 C CNN
+F 3 "~" H 6500 2160 50  0001 C CNN
+	1    6450 2200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2200 6150 2200
+Wire Wire Line
+	6150 2200 6150 2100
+Wire Wire Line
+	5850 2400 6150 2400
+Wire Wire Line
+	6150 2400 6150 2300
+Wire Wire Line
+	5650 1250 6150 1250
+Wire Wire Line
+	6150 1250 6150 2100
+Connection ~ 6150 2100
+$Comp
+L Switch:SW_Push_Dual SW1
+U 1 1 60A99454
+P 5450 1250
+F 0 "SW1" H 5450 1535 50  0000 C CNN
+F 1 "SW_Push_Dual" H 5450 1444 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 5450 1450 50  0001 C CNN
+F 3 "~" H 5450 1450 50  0001 C CNN
+	1    5450 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1250 5050 1250
+Wire Wire Line
+	5050 1250 5050 2000
+Wire Wire Line
+	5050 2000 5250 2000
+Wire Wire Line
+	5250 2000 5250 2200
 $EndSCHEMATC
