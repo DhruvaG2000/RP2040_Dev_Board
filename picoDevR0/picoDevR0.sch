@@ -127,12 +127,12 @@ Connection ~ 5400 3950
 $Comp
 L Switch:SW_MEC_5G_LED Main_SW1
 U 1 1 60A518BE
-P 5450 2300
-F 0 "Main_SW1" H 5450 2685 50  0000 C CNN
-F 1 "SW_MEC_5G_LED" H 5450 2594 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 5450 2600 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 5450 2600 50  0001 C CNN
-	1    5450 2300
+P 6700 1950
+F 0 "Main_SW1" H 6700 2335 50  0000 C CNN
+F 1 "SW_MEC_5G_LED" H 6700 2244 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6700 2250 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6700 2250 50  0001 C CNN
+	1    6700 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -141,9 +141,7 @@ Connection ~ 5850 2200
 Wire Wire Line
 	5850 2200 6450 2200
 Wire Wire Line
-	5250 2200 5100 2200
-Wire Wire Line
-	4800 2500 5850 2500
+	4800 2500 5250 2500
 Wire Wire Line
 	4500 3850 5400 3850
 Wire Wire Line
@@ -208,4 +206,57 @@ Wire Wire Line
 	3350 5450 4000 5450
 Wire Wire Line
 	4000 5550 3350 5550
+$Comp
+L Device:R R1
+U 1 1 609F8EDD
+P 5650 2450
+F 0 "R1" H 5720 2496 50  0000 L CNN
+F 1 "R" H 5720 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0922_L20.0mm_D9.0mm_P30.48mm_Horizontal" V 5580 2450 50  0001 C CNN
+F 3 "~" H 5650 2450 50  0001 C CNN
+	1    5650 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2600 5800 2600
+Wire Wire Line
+	5800 2600 5800 1750
+Wire Wire Line
+	5250 2300 5250 2500
+Connection ~ 5250 2500
+Wire Wire Line
+	5250 2500 5850 2500
+Wire Wire Line
+	5100 2200 5250 2200
+Wire Wire Line
+	4500 1750 4500 2200
+Wire Wire Line
+	4500 1750 5800 1750
+Connection ~ 4500 2200
+$Comp
+L Switch:SW_MEC_5G SW?
+U 1 1 60A09B24
+P 5450 2200
+F 0 "SW?" H 5450 2485 50  0000 C CNN
+F 1 "SW_MEC_5G" H 5450 2394 50  0000 C CNN
+F 2 "" H 5450 2400 50  0001 C CNN
+F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 5450 2400 50  0001 C CNN
+	1    5450 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60A0A221
+P 5450 2300
+F 0 "D?" H 5443 2517 50  0000 C CNN
+F 1 "LED" H 5443 2426 50  0000 C CNN
+F 2 "" H 5450 2300 50  0001 C CNN
+F 3 "~" H 5450 2300 50  0001 C CNN
+	1    5450 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2300 5300 2300
+Wire Wire Line
+	5650 2300 5600 2300
 $EndSCHEMATC
