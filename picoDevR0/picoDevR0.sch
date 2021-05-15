@@ -83,13 +83,13 @@ U 1 1 60A164B8
 P 4800 2200
 F 0 "U1" H 4800 2442 50  0000 C CNN
 F 1 "LM1117-3.3" H 4800 2351 50  0000 C CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x03_P1.00mm_Vertical" H 4800 2200 50  0001 C CNN
+F 2 "Connector_PinSocket_1.00mm:PinSocket_1x03_P1.00mm_Vertical" H 4800 2200 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 4800 2200 50  0001 C CNN
 	1    4800 2200
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5850 2400 5850 2500
+	5850 2400 5850 2450
 $Comp
 L Connector:Conn_01x04_Male 12Vout1
 U 1 1 60A2414E
@@ -102,20 +102,6 @@ F 3 "~" H 6250 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 2800 6450 2900
-Wire Wire Line
-	6450 3000 6450 2900
-Connection ~ 6450 2900
-Wire Wire Line
-	6450 3000 6450 3100
-Connection ~ 6450 3000
-Connection ~ 6450 3100
-Wire Wire Line
-	6450 3100 6450 3150
-Connection ~ 6450 2800
-Wire Wire Line
-	6450 2800 6450 2200
-Wire Wire Line
 	4500 2200 4500 3850
 Connection ~ 5400 3850
 Wire Wire Line
@@ -124,17 +110,6 @@ Wire Wire Line
 	4800 2500 4800 3950
 Connection ~ 4800 2500
 Connection ~ 5400 3950
-$Comp
-L Switch:SW_MEC_5G_LED Main_SW1
-U 1 1 60A518BE
-P 6700 1950
-F 0 "Main_SW1" H 6700 2335 50  0000 C CNN
-F 1 "SW_MEC_5G_LED" H 6700 2244 50  0000 C CNN
-F 2 "LED_THT:LED_D3.0mm" H 6700 2250 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 6700 2250 50  0001 C CNN
-	1    6700 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 2200 5850 2200
 Connection ~ 5850 2200
@@ -234,23 +209,23 @@ Wire Wire Line
 	4500 1750 5800 1750
 Connection ~ 4500 2200
 $Comp
-L Switch:SW_MEC_5G SW?
+L Switch:SW_MEC_5G SW1
 U 1 1 60A09B24
 P 5450 2200
-F 0 "SW?" H 5450 2485 50  0000 C CNN
+F 0 "SW1" H 5450 2485 50  0000 C CNN
 F 1 "SW_MEC_5G" H 5450 2394 50  0000 C CNN
-F 2 "" H 5450 2400 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_CW_GPTS203211B" H 5450 2400 50  0001 C CNN
 F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488" H 5450 2400 50  0001 C CNN
 	1    5450 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED D1
 U 1 1 60A0A221
 P 5450 2300
-F 0 "D?" H 5443 2517 50  0000 C CNN
+F 0 "D1" H 5443 2517 50  0000 C CNN
 F 1 "LED" H 5443 2426 50  0000 C CNN
-F 2 "" H 5450 2300 50  0001 C CNN
+F 2 "LED_THT:LED_D10.0mm" H 5450 2300 50  0001 C CNN
 F 3 "~" H 5450 2300 50  0001 C CNN
 	1    5450 2300
 	1    0    0    -1  
@@ -259,4 +234,42 @@ Wire Wire Line
 	5250 2300 5300 2300
 Wire Wire Line
 	5650 2300 5600 2300
+$Comp
+L Connector:Conn_01x04_Male Main_GND1
+U 1 1 60A16EFC
+P 6600 2900
+F 0 "Main_GND1" H 6708 3181 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 6708 3090 50  0000 C CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x04_P1.00mm_Vertical" H 6600 2900 50  0001 C CNN
+F 3 "~" H 6600 2900 50  0001 C CNN
+	1    6600 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2800 6800 2450
+Wire Wire Line
+	6800 2450 5850 2450
+Connection ~ 5850 2450
+Wire Wire Line
+	5850 2450 5850 2500
+Wire Wire Line
+	6800 2900 6800 2800
+Connection ~ 6800 2900
+Wire Wire Line
+	6800 2900 6800 3000
+Connection ~ 6800 2800
+Wire Wire Line
+	6800 3100 6800 3000
+Connection ~ 6800 3000
+Connection ~ 6450 2800
+Wire Wire Line
+	6450 2200 6450 2800
+Wire Wire Line
+	6450 2800 6450 2900
+Wire Wire Line
+	6450 3100 6450 3000
+Connection ~ 6450 2900
+Connection ~ 6450 3000
+Wire Wire Line
+	6450 3000 6450 2900
 $EndSCHEMATC
