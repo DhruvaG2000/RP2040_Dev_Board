@@ -4,7 +4,7 @@ Kicad PCB design for a RP2040 Development Board Designed to make the RP2040 more
 - [X] Add Female headers to the PCB to directly connect with pico
 - [X] Add 12V/5V and 3.3V Power  
 - [ ] Add LEDs
-  - [ ] Power LED
+  - [X] Power LED
   - [ ] Blink LED
 - [ ] Add Battery power circuit    
 - [ ] Add slots for Basic sensors like DHT11, 22, LDR, etc.
