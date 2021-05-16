@@ -20,4 +20,4 @@ Kicad PCB design for a RP2040 Development Board Designed to make the RP2040 more
 
 ### Schematic layout:
 
-![img](photos/picoDevR0_may16_sch.png)
+![img](photos/picoDevR0_may16_ckt.png)

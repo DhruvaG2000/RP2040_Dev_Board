@@ -468,8 +468,6 @@ F 3 "" H 4500 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5600 3650 5600 3850
-Wire Wire Line
-	5600 3850 6250 3850
 $Comp
 L power:+5V #PWR0104
 U 1 1 60C7459A
@@ -496,16 +494,28 @@ Wire Wire Line
 	3800 1150 3800 900 
 Wire Wire Line
 	5400 3850 5600 3850
-Connection ~ 5600 3850
 $Comp
-L Diode:1N4148 D?
+L Diode:1N4148 D2
 U 1 1 60CAB248
 P 6250 850
-F 0 "D?" H 6250 1067 50  0000 C CNN
+F 0 "D2" H 6250 1067 50  0000 C CNN
 F 1 "1N4148" H 6250 976 50  0000 C CNN
 F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 675 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6250 850 50  0001 C CNN
 	1    6250 850 
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR0114
+U 1 1 60CB5175
+P 6200 3850
+F 0 "#PWR0114" H 6200 3700 50  0001 C CNN
+F 1 "+5V" H 6215 4023 50  0000 C CNN
+F 2 "" H 6200 3850 50  0001 C CNN
+F 3 "" H 6200 3850 50  0001 C CNN
+	1    6200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3850 6200 3850
 $EndSCHEMATC
